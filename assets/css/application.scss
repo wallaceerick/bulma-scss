@@ -1,0 +1,63 @@
+// We are following a pattern called ITCSS (Inverted Triangle CSS).
+// The concept is based mainly around layering on styles based on their reach within
+// the DOM. We are also using this in combination of BEM and name spacing.
+// https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+
+// Settings: Global variables, config and colors definitions.
+@import "settings/functions",
+		"settings/colors",
+		"settings/screens",
+		"settings/fonts";
+
+// Tools: Libraries, mixins and functions.
+@import "tools/bourbon",
+		"tools/mixins",
+		"tools/animations",
+		"tools/controls";
+
+// Generic: Ground-zero styles (normalize, reset, helpers and generics).
+@import "generic/reset",
+		"generic/helpers";
+		// OK
+
+// Elements: Unclassed HTML elements (type selectors).
+//@import "elements/headings";
+
+// Objects: Class-based selectors which define undecorated design patterns.
+@import "objects/columns",
+		"objects/tiles",
+		"objects/hero",
+		"objects/header",
+		"objects/sidebar",
+		"objects/section",
+		"objects/footer";
+		// OK
+
+// Components: Designed components, chunks of UI.
+@import "components/box",
+		"components/button",
+		"components/content",
+		"components/form",
+		"components/icon",
+		"components/image",
+		"components/notification",
+		"components/progress",
+		"components/table",
+		"components/tag",
+		"components/title",
+		"components/other",
+		"components/card",
+		"components/level",
+		"components/media",
+		"components/menu",
+		"components/message",
+		"components/modal",
+		"components/nav",
+		"components/pagination",
+		"components/panel",
+		"components/tabs";
+		// OK
+
+// Trumps: Utilities and helper classes with ability to override anything which goes before in the triangle.
+@import "trumps/overrides";
+		// OK
