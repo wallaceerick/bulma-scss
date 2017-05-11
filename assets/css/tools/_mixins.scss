@@ -183,7 +183,7 @@
 }
 
 @mixin loader {
-    animation: spinAround 500ms infinite linear;
+    animation: rotate 500ms infinite linear;
     border: 2px solid $border;
     border-radius: 290486px;
     border-right-color: transparent;

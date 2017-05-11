@@ -4,32 +4,59 @@
 // |------------------------------------------------------
 // |------------------------------------------------------
 
-// Blocks
-html,
+html {
+    box-sizing: border-box;
+    background-color: $body-background;
+    font-size: $body-size;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: $render-mode;
+}
+
+body {
+  color: $text;
+  font-size: 1rem;
+  font-weight: $primary-medium;
+  line-height: 1.5;
+}
+
 body,
-p,
-ol,
-ul,
-li,
+button,
+input,
+select,
+textarea {
+    font-family: $family-primary;
+}
+
+// Blocks
+blockquote,
+body,
+dd,
 dl,
 dt,
-dd,
-blockquote,
-figure,
 fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
+figure,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-  padding: 0;
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 // Headings
@@ -39,13 +66,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 100%;
-  font-weight: normal;
+    font-size: 100%;
+    font-weight: normal;
 }
 
 // List
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 // Form
@@ -53,46 +80,88 @@ button,
 input,
 select,
 textarea {
-  margin: 0;
+    margin: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: baseline;
+}
+
+// HTML5
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
 }
 
 // Box sizing
-html {
-  box-sizing: border-box;
+* {
+    box-sizing: inherit;
+    &:after,
+    &:before {
+        box-sizing: inherit;
+    }
 }
 
-* {
-  box-sizing: inherit;
+// Inline
+small {
+    font-size: 0.8em;
+}
 
-  &:before,
-  &:after {
-    box-sizing: inherit;
-  }
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+strong {
+    color: $text-strong;
+    font-weight: $primary-bold;
 }
 
 // Media
-img,
-embed,
-object,
 audio,
+embed,
+img,
+object,
 video {
-  height: auto;
-  max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 // Iframe
 iframe {
-  border: 0;
+    border: 0;
+}
+
+// Code
+code,
+pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: $family-code;
 }
 
 // Table
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
 
-td,
-th {
-  padding: 0;
-  text-align: left;
+    th {
+        color: $text-strong;
+    }
+
+    td,
+    th {
+        padding: 0;
+        text-align: left;
+        vertical-align: top;
+        text-align: left;
+    }
+
 }

@@ -222,7 +222,7 @@ $input-radius: $radius !default;
     color: $input;
     display: block;
     font-size: $size-normal;
-    font-weight: $weight-bold;
+    font-weight: $primary-bold;
 
     &:not(:last-child) {
         margin-bottom: 0.5em;
@@ -423,7 +423,7 @@ $input-radius: $radius !default;
     font-size: $size-normal;
     position: relative;
     text-align: left;
-    
+
     // Modifiers
     // DEPRECATED
     &.has-icon {

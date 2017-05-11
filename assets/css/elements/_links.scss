@@ -1,0 +1,26 @@
+// |------------------------------------------------------
+// |------------------------------------------------------
+// | Links
+// |------------------------------------------------------
+// |------------------------------------------------------
+
+a {
+    color: $link;
+    cursor: pointer;
+    text-decoration: none;
+    transition: none $speed $easing;
+
+    &:hover {
+        color: $link-hover;
+    }
+
+    // Sections
+    @each $section, $pair in $sections {
+        $color: nth($pair, 1);
+
+        &.is-#{$section} {
+            color: $color;
+        }
+    }
+
+}

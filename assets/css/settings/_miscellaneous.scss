@@ -1,15 +1,12 @@
 // |------------------------------------------------------
 // |------------------------------------------------------
-// | Animations
+// | Miscellaneous
 // |------------------------------------------------------
 // |------------------------------------------------------
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-}
+$easing:       ease-out !default;
+$radius-small: 2px !default;
+$radius:       3px !default;
+$radius-large: 5px !default;
+$speed:        86ms !default;
+// $output-bourbon-deprecation-warnings: false;

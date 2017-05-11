@@ -33,7 +33,7 @@
     h5,
     h6 {
         color: $text-strong;
-        font-weight: $weight-normal;
+        font-weight: $primary-medium;
         line-height: 1.125;
     }
 
@@ -182,5 +182,5 @@
     &.is-large {
         font-size: $size-large;
     }
-    
+
 }

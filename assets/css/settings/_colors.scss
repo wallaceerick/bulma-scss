@@ -5,7 +5,6 @@
 // |------------------------------------------------------
 
 // Colors
-
 $black:             hsl(0, 0%, 4%) !default;
 $black-bis:         hsl(0, 0%, 7%) !default;
 $black-ter:         hsl(0, 0%, 14%) !default;
@@ -20,137 +19,120 @@ $white-ter:         hsl(0, 0%, 96%) !default;
 $white-bis:         hsl(0, 0%, 98%) !default;
 $white:             hsl(0, 0%, 100%) !default;
 
-$orange:            hsl(14, 100%, 53%) !default;
-$yellow:            hsl(48, 100%, 67%) !default;
-$green:             hsl(141, 71%, 48%) !default;
+$red:               hsl(5, 100%, 58%) !default;
+$green:             hsl(140, 100%, 35%) !default;
+$blue:              hsl(206, 100%, 46%) !default;
+$orange:            hsl(40, 100%, 50%) !default;
+$yellow:            hsl(50, 100%, 53%) !default;
 $turquoise:         hsl(171, 100%, 41%) !default;
-$blue:              hsl(217, 71%, 53%) !default;
-$purple:            hsl(271, 100%, 71%) !default;
-$red:               hsl(348, 100%, 61%) !default;
+$purple:            hsl(267, 57%, 57%) !default;
+$pink:              hsl(328, 100%, 61%) !default;
 
-// Typography
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
-$family-monospace: monospace !default;
-$render-mode: optimizeLegibility !default;
+// Section colors
+$ps4:               $blue !default;
+$ps3:               $purple !default;
+$vita:              $green !default;
+$ranking:           $orange !default;
+$users:             $red !default;
 
-$size-1: 3rem !default;
-$size-2: 2.5rem !default;
-$size-3: 2rem !default;
-$size-4: 1.5rem !default;
-$size-5: 1.25rem !default;
-$size-6: 1rem !default;
-$size-7: 0.75rem !default;
-
-$weight-light:     300 !default;
-$weight-normal:    400 !default;
-$weight-semibold:  500 !default;
-$weight-bold:      700 !default;
-
-// Body
-
-$body-background:
-fff !default;
-$body-size: 16px !default;
-
-
-
-// Miscellaneous
-
-$easing: ease-out !default;
-$radius-small: 2px !default;
-$radius: 3px !default;
-$radius-large: 5px !default;
-$speed: 86ms !default;
-$output-bourbon-deprecation-warnings: false;
-
-/* DERIVED COLORS */
-
-$primary: $turquoise !default;
-
-$info: $blue !default;
-$success: $green !default;
-$warning: $yellow !default;
-$danger: $red !default;
-
-$light: $white-ter !default;
-$dark: $grey-darker !default;
+// Derived colors
+$primary:           $blue !default;
+$info:              $blue !default;
+$success:           $green !default;
+$warning:           $yellow !default;
+$danger:            $red !default;
+$light:             $white-ter !default;
+$dark:              $grey-darker !default;
 
 // Invert colors
+$red-invert:        findColorInvert($red) !default;
+$green-invert:      findColorInvert($green) !default;
+$blue-invert:       findColorInvert($blue) !default;
+$orange-invert:     findColorInvert($orange) !default;
+$yellow-invert:     findColorInvert($yellow) !default;
+$turquoise-invert:  findColorInvert($turquoise) !default;
+$purple-invert:     findColorInvert($purple) !default;
+$pink-invert:       findColorInvert($pink) !default;
 
-$orange-invert: findColorInvert($orange) !default;
-$yellow-invert: findColorInvert($yellow) !default;
-$green-invert: findColorInvert($green) !default;
-$turquoise-invert: findColorInvert($turquoise) !default;
-$blue-invert: findColorInvert($blue) !default;
-$purple-invert: findColorInvert($purple) !default;
-$red-invert: findColorInvert($red) !default;
+$ps4-inverted:      findColorInvert($blue) !default;
+$ps3-inverted:      findColorInvert($purple) !default;
+$vita-inverted:     findColorInvert($green) !default;
+$ranking-inverted:  findColorInvert($orange) !default;
+$users-inverted:    findColorInvert($red) !default;
 
-$primary-invert: $turquoise-invert !default;
-$info-invert: $blue-invert !default;
-$success-invert: $green-invert !default;
-$warning-invert: $yellow-invert !default;
-$danger-invert: $red-invert !default;
-$light-invert: $dark !default;
-$dark-invert: $light !default;
+$primary-invert:    $turquoise-invert !default;
+$info-invert:       $blue-invert !default;
+$success-invert:    $green-invert !default;
+$warning-invert:    $yellow-invert !default;
+$danger-invert:     $red-invert !default;
+$light-invert:      $dark !default;
+$dark-invert:       $light !default;
 
 // General colors
-
-$background: $white-ter !default;
-$border: $grey-lighter !default;
-$border-hover: $grey-light !default;
+$body-background:   #fff !default;
+$body-size:         16px !default;
+$background:        $white-ter !default;
+$border:            $grey-lighter !default;
+$border-hover:      $grey-light !default;
 
 // Text colors
+$text:              $grey-dark !default;
+$text-invert:       findColorInvert($text) !default;
+$text-light:        $grey !default;
+$text-strong:       $grey-darker !default;
 
-$text: $grey-dark !default;
-$text-invert: findColorInvert($text) !default;
-$text-light: $grey !default;
-$text-strong: $grey-darker !default;
-
-// Code colors
-
-$code: $red !default;
-$code-background: $background !default;
-
-$pre: $text !default;
-$pre-background: $background !default;
+// Code and Pre colors
+$code:              $red !default;
+$code-background:   $background !default;
+$pre:               $text !default;
+$pre-background:    $background !default;
 
 // Link colors
+$link:              $primary !default;
+$link-invert:       $primary-invert !default;
+$link-visited:      $purple !default;
 
-$link: $primary !default;
-$link-invert: $primary-invert !default;
-$link-visited: $purple !default;
-
-$link-hover: $grey-darker !default;
+$link-hover:        $grey-darker !default;
 $link-hover-border: $grey-light !default;
 
-$link-focus: $grey-darker !default;
+$link-focus:        $grey-darker !default;
 $link-focus-border: $primary !default;
 
-$link-active: $grey-darker !default;
-$link-active-border: $grey-dark !default;
-
-// Typography
-
-$family-primary: $family-sans-serif !default;
-$family-code: $family-monospace !default;
-
-$size-small: $size-7 !default;
-$size-normal: $size-6 !default;
-$size-medium: $size-5 !default;
-$size-large: $size-4 !default;
+$link-active:       $grey-darker !default;
+$link-active-border:$grey-dark !default;
 
 // Lists and maps
-
-$colors: (
-        "white":   ($white,   $black),
-        "black":   ($black,   $white),
-        "light":   ($light,   $light-invert),
-        "dark":    ($dark,    $dark-invert),
-        "primary": ($primary, $primary-invert),
-        "info":    ($info,    $info-invert),
-        "success": ($success, $success-invert),
-        "warning": ($warning, $warning-invert),
-        "danger":  ($danger,  $danger-invert)
+$rating:(
+    "very-good": (hsl(144, 99%, 35%)),
+    "good":      (hsl(78, 93%, 44%)),
+    "regular":   (hsl(51, 100%, 51%)),
+    "bad":       (hsl(40, 100%, 55%)),
+    "very-bad":  (hsl(19, 100%, 67%)),
 )!default;
 
-$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default;
+$sections: (
+    "ps4":     ($ps4),
+    "ps3":     ($ps3),
+    "vita":    ($vita),
+    "ranking": ($ranking),
+    "users":   ($users),
+)!default;
+
+$menus: (
+    "green":   (hsl(100, 57%, 48%), hsl(136, 62%, 42%)),
+    "red":     (hsl(344, 98%, 42%), hsl(34, 96%, 65%)),
+    "purple":  (hsl(276, 51%, 36%), hsl(306, 37%, 46%)),
+    "blue":    (hsl(192, 63%, 49%), hsl(203, 67%, 39%))
+)!default;
+
+$colors: (
+    "white":   ($white,   $black),
+    "black":   ($black,   $white),
+    "light":   ($light,   $light-invert),
+    "dark":    ($dark,    $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info":    ($info,    $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger":  ($danger,  $danger-invert)
+)!default;
