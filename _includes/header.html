@@ -1,10 +1,10 @@
-<div class="container">
+<header class="container">
     <nav class="nav">
-        <div class="nav-left">
+        <h1 class="nav-left">
             <a class="nav-item is-brand" href="{{ site.url }}">
                 <img src="{{site.url}}/assets/images/bulma-logo.png" alt="{{ site.title }}">
             </a>
-        </div>
+        </h1>
 
         <span id="nav-toggle" class="nav-toggle">
             <span></span>
@@ -12,9 +12,10 @@
             <span></span>
         </span>
 
-        <div id="nav-menu" class="nav-right nav-menu">
-            <a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">Home</a>
-            <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.url }}/documentation/overview/start">Documentation</a>
-        </div>
+        <ul id="nav-menu" class="nav-right nav-menu">
+            <li><a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">Home</a></li>
+            <li><a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">Games</a></li>
+            <li><a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">Ranking</a></li>
+        </ul>
     </nav>
-</div>
+</header>
