@@ -1,0 +1,15 @@
+# Meta
+title:         "Bulma: a modern CSS framework based on Flexbox"
+email:         wallace_erick@hotmail.com
+description:   "Bulma is an open source CSS framework based on Flexbox and built with Sass."
+
+# Build
+url:           http://localhost:4000/
+permalink:     pretty
+fontawesome:   https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+markdown:      kramdown
+theme:         minima
+
+# Variables
+documentation: "/documentation/overview/start/"
+version:       0.4.1
