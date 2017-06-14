@@ -1,43 +1,68 @@
-<section class="hero is-primary">
+<html lang="en">
+    <head>
 
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column">
-                    <p class="title">Documentation</p>
-                    <p class="subtitle">Everything you need to <strong>create a website</strong> with Bulma</p>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+        <link rel="stylesheet" href="{{ site.fontawesome }}">
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/application.css">
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/documentation.css">
+
+    </head>
+
+    <body>
+
+        {% include header.html %}
+
+        <section class="hero is-primary">
+
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <p class="title">Documentation</p>
+                            <p class="subtitle">Everything you need to <strong>create a website</strong> with Bulma</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="hero-foot">
-        <div class="container">
-            <nav class="tabs is-boxed">
-                <ul>
-                    <li {% if page.doc-tab=='overview' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/overview/start">Overview</a>
-                    </li>
-                    <li {% if page.doc-tab=='modifiers' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/modifiers/syntax">Modifiers</a>
-                    </li>
-                    <li {% if page.doc-tab=='grid' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/grid/columns">Grid</a>
-                    </li>
-                    <li {% if page.doc-tab=='elements' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/elements/box/">Elements</a>
-                    </li>
-                    <li {% if page.doc-tab=='components' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/components/card/">Components</a>
-                    </li>
-                    <li {% if page.doc-tab=='layout' %}class="is-active" {% endif %}>
-                        <a href="{{ site.url }}/documentation/layout/container/">Layout</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+            <div class="hero-foot">
+                <div class="container">
+                    <nav class="tabs is-boxed">
+                        <ul>
+                            <li {% if page.doc-tab=='overview' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/overview/start">Overview</a>
+                            </li>
+                            <li {% if page.doc-tab=='modifiers' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/modifiers/syntax">Modifiers</a>
+                            </li>
+                            <li {% if page.doc-tab=='grid' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/grid/columns">Grid</a>
+                            </li>
+                            <li {% if page.doc-tab=='elements' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/elements/box/">Elements</a>
+                            </li>
+                            <li {% if page.doc-tab=='components' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/components/card/">Components</a>
+                            </li>
+                            <li {% if page.doc-tab=='layout' %}class="is-active" {% endif %}>
+                                <a href="{{ site.url }}/documentation/layout/container/">Layout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-</section>
+        </section>
 
-{{ content }}
+        {{ content }}
+
+        {% include footer.html %}
+
+    </body>
+</html>

@@ -7,7 +7,7 @@
 @import url('//fonts.googleapis.com/css?family=Roboto:300,500,700');
 @import url('//fonts.googleapis.com/css?family=Montserrat:300,400,600');
 
-$family-primary:   'Roboto', sans-serif !default;
+$family-primary:   BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif!default;
 $family-secundary: 'Montserrat', sans-serif !default;
 $family-code:      monospace !default;
 $render-mode:      optimizeLegibility !default;
